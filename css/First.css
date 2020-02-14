@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* css reset */
+
+.nav {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    opacity: 0.6;
+}
+.nav a {
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    display: block;
+    padding: 60px 0;
+}
+.back-home a.home-a{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    /* margin: 25px auto; */
+    position: relative;
+    top: -10px;
+    margin-top: 10%;
+    left: -50px;
+    margin-left: 50%;
+    background: url('../img/head.jpg') no-repeat;
+    border-radius: 50%;
+    border: solid 1px white;
+}
+a:focus,a:hover{
+    text-decoration: none;
+}
+nav a.about:hover{
+    color: slateblue;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+nav a.works:hover{
+    color: deeppink;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+nav a.skill:hover{
+    color: springgreen;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+nav a.contact:hover{
+    color: orange;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+    /* home */
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg1.jpg') no-repeat;
+    background-size: cover;
+}
+dl.home-content{
+    position: relative;
+    top: 220px;
+}
+.home-content dd{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+}
+.click{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 50%;
+    left: -30px;
+    cursor: pointer;
+    bottom: 40px;
+    background: url('../img/jt.jpg');
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -ms-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.click:hover{
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* about */
+#about{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg2.jpg') no-repeat;
+    background-size: cover;
+}
+.about-content{
+    width: 960px;
+    position: relative;
+    top: 185px;
+}
+.about-content .bio-icon,
+.about-content .about-text {
+    opacity: 0;
+}
+.about-content .one-left{
+    margin-left: 500px;
+}
+
+.about-content .bio-icon1 {
+    -webkit-animation: bio-icon-in .6s ease-in-out .7s 1 forwards;
+    -moz-animation: bio-icon-in .6s ease-in-out .7s 1 forwards;
+    -ms-animation: bio-icon-in .6s ease-in-out .7s 1 forwards;
+    -o-animation: bio-icon-in .6s ease-in-out .7s 1 forwards;
+    animation: bio-icon-in .6s ease-in-out .7s 1 forwards;
+}
+.about-content .bio-icon2 {
+    -webkit-animation: bio-icon-in .6s ease-in-out 1s 1 forwards;
+    -moz-animation: bio-icon-in .6s ease-in-out 1s 1 forwards;
+    -ms-animation: bio-icon-in .6s ease-in-out 1s 1 forwards;
+    -o-animation: bio-icon-in .6s ease-in-out 1s 1 forwards;
+    animation: bio-icon-in .6s ease-in-out 1s 1 forwards;
+}
+.about-content .bio-icon3 {
+    -webkit-animation: bio-icon-in .6s ease-in-out 1.3s 1 forwards;
+    -moz-animation: bio-icon-in .6s ease-in-out 1.3s 1 forwards;
+    -ms-animation: bio-icon-in .6s ease-in-out 1.3s 1 forwards;
+    -o-animation: bio-icon-in .6s ease-in-out 1.3s 1 forwards;
+    animation: bio-icon-in .6s ease-in-out 1.3s 1 forwards;
+}
+
+@-webkit-keyframes bio-icon-in {
+    0%{
+        transform: rotate(-60deg);
+        margin-left: -30px;
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+.about-content .about-text {
+    font-size: 28px;
+    font-family: cursive;
+    font-weight: 1000;
+    display: inline-block;
+}
+@-webkit-keyframes bio-text-in {
+    0%{
+        transform: translate(500px,0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(30px,0);
+        opacity: 1;
+    }
+}
+.about-content .one-right {
+    -webkit-animation: bio-text-in .6s ease-in-out .7s 1 forwards;
+    -ms-animation: bio-text-in .6s ease-in-out .7s 1 forwards;
+    -o-animation: bio-text-in .6s ease-in-out .7s 1 forwards;
+    -moz-animation: bio-text-in .6s ease-in-out .7s 1 forwards;
+    animation: bio-text-in .6s ease-in-out .7s 1 forwards;
+}
+.about-content .two-right {
+    -webkit-animation: bio-text-in .6s ease-in-out 1s 1 forwards;
+    -ms-animation: bio-text-in .6s ease-in-out 1s 1 forwards;
+    -o-animation: bio-text-in .6s ease-in-out 1s 1 forwards;
+    -moz-animation: bio-text-in .6s ease-in-out 1s 1 forwards;
+    animation: bio-text-in .6s ease-in-out 1s 1 forwards;
+}
+.about-content .three-right {
+    -webkit-animation: bio-text-in .6s ease-in-out 1.3s 1 forwards;
+    -ms-animation: bio-text-in .6s ease-in-out 1.3s 1 forwards;
+    -o-animation: bio-text-in .6s ease-in-out 1.3s 1 forwards;
+    -moz-animation: bio-text-in .6s ease-in-out 1.3s 1 forwards;
+    animation: bio-text-in .6s ease-in-out 1.3s 1 forwards;
+}
+    
+#works{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg3.jpg') no-repeat;
+    background-size: cover;
+}
+#skill{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg4.jpg') no-repeat;
+    background-size: cover;
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg5.jpg') no-repeat;
+    background-size: cover;
+}
